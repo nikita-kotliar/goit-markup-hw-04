@@ -1,0 +1,393 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    padding-top: 72px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, h3 {
+    color: #2E2F42;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+/* Хеадер */
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.header-main-div {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #4d5ae5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    text-transform: uppercase;
+    margin-right: 76px;
+    display: block;
+}
+
+.nav-logo-span {
+    color: #2e2f42;
+}
+
+.nav-ul {
+    display: flex;
+    gap: 40px;
+}
+
+.adress-href{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    color: #434455;
+    display: block;
+    padding: 24px 0;
+}
+
+.nav-href {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: 24px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    position: relative;
+}
+
+.nav-href:hover, .nav-href:focus {
+    color: #404bbf;
+}
+
+.adress-href:hover, .adress-href:focus {
+    color: #404bbf;
+}
+
+.address {
+    font-style: normal;
+    margin-left: auto;
+}
+
+.address-ul {
+    display: flex;
+    gap: 40px;
+}
+
+/* хувер навігації */
+
+.nav-href::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #404BBF;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.nav-href:hover::after {
+    opacity: 1;
+}
+
+/* секція 1 */
+
+.section-one {
+    background-color: #2e2f42;
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-one-main-text {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    max-width: 496px;
+    margin: auto;
+    margin-bottom: 48px;
+}
+
+.main-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    transition-duration: 0.4s;
+}
+
+.main-button:hover, button:focus {
+    background-color: #404BBF;
+}
+
+/* секція 2 */
+
+.section-twoo {
+    padding: 120px 0;
+}
+
+.section-twoo-ul {
+    display: flex;
+    gap: 24px;
+}
+
+.section-twoo-li {
+    width: calc((100% - 72px) / 4);
+}
+
+.section-twoo-svg_div {
+    height: 112px;
+    width: 100%;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.section-twoo-text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.section-twoo-p {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-size: 16px
+}
+
+/* секція 3 */
+
+.section-three {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+
+.section-three-main-text {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.section-three-ul {
+    display: flex;
+    gap: 24px;
+    columns: 3;
+}
+
+.section-three-li {
+    background-color: #FFFFFF;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.section-three-li-div {
+    padding: 32px 16px;
+}
+
+.section-three-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.section-three-p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.social-team {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.social-team-li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+
+.social-team-li svg {
+    fill: red;
+}
+
+.social-team-li a:hover {
+    background-color: #ffffff;
+}
+
+/* секція 4 */
+
+.section-four {
+    padding: 120px 0
+}
+
+.section-four-ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.section-four-li {
+    width: calc((100% - 48px) / 3);
+}
+
+.section-four-li-div {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.section-four-main-text {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.section-four-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.section-four-p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* футер */
+
+.footer {
+    background-color: #2e2f42;
+    padding: 100px 0;
+}
+
+.footer-logo {
+    color: #4d5ae5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-logo-span {
+    color: #f4f4fd;
+}
+
+.footer-p {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    max-width: 264px;
+}
