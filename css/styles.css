@@ -279,10 +279,11 @@ img {
     flex-basis: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
     padding: 0 0;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .section-three-li-div {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .section-three-text {
@@ -323,7 +324,7 @@ img {
     fill: #f4f4fd;
 }
 
-.social-team-li a:hover, .adress-href:focus {
+.social-team-li a:hover, .a:focus {
     background-color: #404bbf;
 }
 
@@ -416,6 +417,9 @@ img {
 .footer-main-div {
     display: flex;
     align-items: baseline;
+}
+
+.href-and-logo_div{
     margin-right: 120px;
 }
 
