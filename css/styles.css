@@ -333,9 +333,9 @@ img {
     background-color: #404bbf;
 }
 
-.social-team-li .a:focus {
-    background-color: #404bbf;
-}
+.social-team-li a:focus {
+    background-color: #404BBF;
+    }
 /* секція 4 */
 
 .section-four {
@@ -479,6 +479,10 @@ img {
     fill: #f4f4fd;
 }
 
-.social-icon-li a:hover, .adress-href:focus {
+.social-icon-li a:hover{
     background-color: #31d0aa;
+}
+
+.social-icon-li a:focus {
+    background-color: #31D0AA;
 }
