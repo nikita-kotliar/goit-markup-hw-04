@@ -1,3 +1,7 @@
+:root {
+    --light-gray: #f4f4fd;
+}
+
 *,
 *::before,
 *::after {
@@ -322,10 +326,14 @@ img {
 }
 
 .social-team-li svg {
-    fill: #f4f4fd;
+    fill: var(--light-gray);
 }
 
 .social-team-li a:hover, .a:focus {
+    background-color: #404bbf;
+}
+
+.social-team-li .a:focus {
     background-color: #404bbf;
 }
 /* секція 4 */
