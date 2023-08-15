@@ -326,7 +326,7 @@ img {
 }
 
 .social-team-li svg {
-    fill: var(--light-gray);
+    fill: #f4f4fd;
 }
 
 .social-team-li a:hover, .a:focus {
@@ -481,8 +481,4 @@ img {
 
 .social-icon-li a:hover, .adress-href:focus {
     background-color: #31d0aa;
-}
-
-.social-icon-li a:hover, a:focus svg {
-    fill: #4D5AE5;
 }
