@@ -309,11 +309,15 @@ img {
 }
 
 .social-team-li svg {
-    fill: red;
+    fill: #fff;
 }
 
 .social-team-li a:hover {
     background-color: #ffffff;
+}
+
+.social-team-li svg:hover {
+    fill: #4D5AE5;
 }
 
 /* секція 4 */
