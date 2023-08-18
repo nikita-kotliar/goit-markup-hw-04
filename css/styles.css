@@ -1,7 +1,3 @@
-:root {
-    --light-gray: #f4f4fd;
-}
-
 *,
 *::before,
 *::after {
@@ -12,8 +8,6 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
-    margin: 0;
-    padding: 0;
     padding-top: 72px;
 }
 
@@ -119,8 +113,8 @@ img {
 
 .nav-href {
     font-weight: 500;
+    color: #2E2F42;
     letter-spacing: 0.02em;
-    color: #404bbf;
     padding: 24px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -148,9 +142,11 @@ img {
     gap: 40px;
 }
 
-/* хувер навігації */
+.studio {
+    color: #404bbf;
+}
 
-.nav-href::after {
+.studio::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -159,12 +155,6 @@ img {
     bottom: -1px;
     left: 0;
     background-color: #404BBF;
-    opacity: 0;
-    transition-duration: 0.4s;
-}
-
-.nav-href:hover::after {
-    opacity: 1;
 }
 
 /* секція 1 */
@@ -180,6 +170,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .section-one-main-text {
@@ -407,7 +398,7 @@ img {
     transform: translateY(100%);
 }
 
-.section-four-img_div:hover .p-text {
+.section-four-li:hover .section-four-img_div .p-text {
     transform: translateY(0%);
 }
 
